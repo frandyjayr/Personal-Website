@@ -1,0 +1,104 @@
+/*  blue #00909c
+
+    grey #1b1b1b
+*/
+html, body {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #1b1b1b;
+    font-size: 20px;
+    color: #000;
+}
+
+/* ----------------- REUSEABLE ------------------------------ */
+
+h1, h2 {
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 230%;
+}
+
+.line {
+    height: 2px;
+    background-color: #00909c;
+}
+
+p {
+    font-weight: 100;
+}
+
+.circle {
+    margin: 10px;
+    background-color: rgba(27, 27, 27, 0.60);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    line-height: 100px;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.circle:hover {
+    background-color: rgba(0, 144, 156, 0.6);
+}
+
+
+/* ------------------- HEADER ------------------------------- */
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 144, 156, 0.15)), to(rgba(0, 144, 156, 0.15))), url(img/galaxy2.jpg);
+    background-image: linear-gradient(rgba(0, 144, 156, 0.15), rgba(0, 144, 156, 0.15)), url(img/galaxy2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative
+}
+
+/* ------------------- ABOUT ME ------------------------------- */
+
+#profile-picture {
+    border-radius: 100%;
+}
+
+
+/* ------------------- EDUCATION/SKILLS ------------------------ */
+#education-skills-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.90)), to(rgba(0, 0, 0, 0.90))), url(img/education.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(img/education.jpeg);
+    background-size: cover;
+}
+
+/* -------------------- PROJECTS ------------------------------- */
+
+/* ------------------- RESUME/BAR ------------------------------- */
+#resume-bar-section {
+    background-color: #00909c;
+    height: 10vh;
+}
+
+#resume-bar-section p {
+    display: inline-block;
+    font-size: 190%;
+    vertical-align: middle;
+}
+
+#resume-bar-section p:active {
+    font-size: 180%;
+}
+
+.download {
+    color: white;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.download:hover {
+    color: black;
+}
+

@@ -38,7 +38,6 @@
         font-size: 80%
     }
 
-
     .ion-ios-flask,
     .ion-laptop {
         display: none;
@@ -46,10 +45,6 @@
 
     .w-sm-90 {
         width: 90% !important;
-    }
-
-    .w-xs-120 {
-        width: 140% !important;
     }
 
     #resume-bar-section p {
@@ -120,15 +115,15 @@
 
 /* Medium devices 768*/
 @media (min-width: 776px) {
-    /*
+/*
     body {
         background: blue;
     }*/
 
     .circle {
-        height: 100px;
-        width: 100px;
-        line-height: 100px;
+        height: 90px;
+        width: 90px;
+        line-height: 90px;
         font-size: 100%;
     }
 

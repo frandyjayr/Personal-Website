@@ -60,9 +60,11 @@
         display: none;
     }
 
-/*    .form-width {
-        width: 90% !important;
-    }*/
+    .circle-row {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 /* Small devices */
@@ -97,9 +99,11 @@
         width: 75% !important;
     }
 
-/*    .form-width {
-        width: 50% !important;
-    }*/
+    .circle-row {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
 }
 
 /* Medium devices 768*/
@@ -143,9 +147,6 @@
         width: 115%;
     }
 
-/*    .form-width {
-        width: 55% !important;
-    }*/
 }
 
 /* x-large devices */
@@ -167,8 +168,4 @@
     .w-query-circle {
         width: 400px;
     }
-/*
-    .form-width {
-        width: 30% !important;
-    }*/
 }

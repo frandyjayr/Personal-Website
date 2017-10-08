@@ -3,7 +3,8 @@
     grey #1b1b1b
 */
 html, body {
-    font-family: 'Oswald', 'Arial', sans-serif;
+    font-family: 'Alegreya Sans', 'Oswald', 'Arial', sans-serif;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
     background-color: #1b1b1b;
     font-size: 20px;
@@ -12,12 +13,19 @@ html, body {
 
 /* ----------------- REUSEABLE ------------------------------ */
 
-h1, h2 {
+h1, h2, h3, h5 {
     letter-spacing: 1px;
+    margin-bottom: 0;
+    font-weight: 800;
 }
 
 h2 {
     font-size: 230%;
+}
+
+h4 {
+    font-size: 150%;
+    font-weight: 600;
 }
 
 .line {
@@ -27,6 +35,7 @@ h2 {
 
 p {
     font-weight: 100;
+    line-height: 1.5;
 }
 
 .circle {
@@ -43,10 +52,53 @@ p {
     transition: background-color 0.5s;
 }
 
-.circle:hover {
+.circle:hover,
+.small-circle:hover {
     background-color: rgba(0, 144, 156, 0.6);
 }
 
+.small-circle {
+    background-color: rgba(27, 27, 27, 0.60);
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+/* BUTTONS */
+.btn-outline-primary {
+    color: #00909c;
+    border-color: #00909c;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #00909c;
+    color: #fff;
+    border-color: #00909c;
+    outline: none !important;
+}
+
+.resume-btn {
+    opacity: 0.68;
+    -webkit-transition: opacity 2s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.resume-btn:hover {
+    opacity: 1.0 !important;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 
 /* ------------------- HEADER ------------------------------- */
 header {
@@ -60,6 +112,14 @@ header {
     position: relative
 }
 
+#side-nav {
+    position: fixed;
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%)
+}
+
 /* ------------------- ABOUT ME ------------------------------- */
 
 #profile-picture {
@@ -69,36 +129,22 @@ header {
 
 /* ------------------- EDUCATION/SKILLS ------------------------ */
 #education-skills-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.90)), to(rgba(0, 0, 0, 0.90))), url(img/education.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(img/education.jpeg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(img/education.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/education.jpeg);
     background-size: cover;
 }
 
 /* -------------------- PROJECTS ------------------------------- */
-
-/* ------------------- RESUME/BAR ------------------------------- */
-#resume-bar-section {
+footer {
     background-color: #00909c;
-    height: 10vh;
 }
 
-#resume-bar-section p {
-    display: inline-block;
-    font-size: 190%;
-    vertical-align: middle;
+footer li {
+    list-style-type: none;
 }
 
-#resume-bar-section p:active {
-    font-size: 180%;
+/* --------------------- CONTACT ------------------------------ */
+#contact-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/contact-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/contact-background.jpg);
 }
-
-.download {
-    color: white;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
-}
-
-.download:hover {
-    color: black;
-}
-
